@@ -1,0 +1,419 @@
+/* style css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* font-family: 'Bodoni Moda', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Serif KR', serif; */
+
+
+a { text-decoration: none;}
+body {
+   font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    /* overflow 스크롤 강제로 없애는거 */
+}
+
+
+#main {
+    /* min-width: 300px; */
+    /* width: 500px; */
+    /* min-width: 375px; */
+    height: 100vh;
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    /* outline: 1px solid red; */
+    color: #939598;
+
+}
+
+#main .main_wrap {
+    /* width: 450px; */
+    height: 700px;
+    /* background-color: yellow; */
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow-y: hidden;
+}
+
+#main .up {
+    /* outline: 1px solid blue; */
+    width: 100%;
+    position: absolute;
+    left: 50%; 
+    top: 80px;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+#main .main_con_wrap {
+    height: 400px;
+    /* background-color: aqua; */
+    position: relative;
+    top: 350px;
+    transform: translateY(-50%);
+}
+
+#main .groom {
+    /* outline: 1px solid pink; */
+    height: 348px;
+    position: absolute;
+    left: 45px; 
+    top: 26px;
+}
+
+#main .bride {
+    /* outline: 1px solid blueviolet; */
+    height: 348px;
+    position: absolute;
+    right: 45px; 
+    top: 26px;
+}
+
+#main .groom > p,
+#main .bride > p {
+    position: relative;
+    top: 150px;
+    /* transform: translateY(-50%); */
+}
+
+
+#main .main_img {
+    /* outline: 1px solid darkorange; */
+    width: 130px;
+    height: 348px;
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: hidden;
+}
+
+/* 이미지 크기조절 */
+#main img {
+    width: 120px;
+}
+
+/* #main .main_img .img2 img { 
+    width: 100px;
+} */
+
+/* 이미지 위치 조정 */
+#main .main_img > div img {
+    /* outline: 1px solid black; */
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    margin-bottom: 30px;
+}
+
+
+#main .main_img > .img1 {
+    margin-top: 10px;
+}
+
+
+
+#main .down {
+    width: 100%;
+    text-align: center;
+    /* outline: 1px solid green; */
+    position: absolute;
+    bottom: 80px; left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* main top&bottom font */
+#main .up, 
+#main .down {
+    font-family: 'Noto Serif KR', serif;
+    letter-spacing: 2px;
+}
+
+#main .fontfam {
+    font-weight: 600;
+}
+
+
+#main .main_img .img2 {
+    animation: rotate-axis 4s linear infinite;
+}
+
+@keyframes rotate-axis {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+section {
+    text-align: center;
+    /* z-index: 9999px; */
+}
+
+/* content */
+#content {
+    text-align: center;
+    /* outline: 1px solid red; */
+    /* background-color: #e2ecf8; */
+}
+
+#content {
+    /* outline: 1px solid blue; */
+    width: 100%;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    padding-top: 100px;
+    padding-bottom: 235px;
+    /* background-color: #e2edf8; */
+    background-image: linear-gradient(to bottom, #e2ecf8, #ffffff);
+}
+
+#content .invi_title {
+    /* position: relative; */
+    /* outline: 1px solid yellow; */
+    padding-bottom: 55px;
+}
+
+#content  p {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+#content  h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+#content .invi_content {
+    margin-bottom: 68px;
+}
+#content .invi_content p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+#content .groomP, 
+#content .brideP {
+    /* outline: 1px solid pink; */
+    align-items: center;
+    overflow-y: hidden;
+}
+#content span {
+    font-size: 16px;
+    padding: 2px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#content .light { 
+    font-weight: 400;
+}
+#content img {
+    width: 16px;
+    margin-bottom: -1px;
+}
+
+#content .invi_footer {
+    margin-top: 68px;
+}
+
+#content .invi_footer p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+#content .invi_footer .bold {
+    font-weight: 400;
+}
+
+#content .line {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 120px;
+}
+/* galley */
+
+#gallery {
+    /* padding-top: 80px; */
+    padding-bottom: 164px;
+    overflow-x: none;
+}
+
+#gallery .slides_wrap { 
+    max-width: 600px;
+    min-width: 350px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    /* outline: 1px solid pink; */
+    
+}
+
+#gallery .slides {
+    display: flex;
+}
+#gallery .slide img {
+    width: 100%;
+}
+
+#gallery .slide {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slides_wrap {
+    /* 다른 속성들은 생략 ... */
+    /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
+    user-select: none;
+  }
+
+
+#gallery .gal_text {
+    padding-top: 100px;
+    color: #939598;
+    font-size: 14px;
+}
+
+#gallery .gal_text span {
+    color: #e2ecf8;
+}
+
+#gallery .line {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 90px;
+    /* margin-bottom: 100px; */
+}
+
+/* location */
+
+#location {
+    /* outline: 1px solid blue; */
+    width: 100%;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    /* padding-top: 135px; */
+    padding-bottom: 100px;
+    /* background-color: #e2edf8; */
+    background-image: linear-gradient(to top, #e2ecf8, #ffffff);
+
+}
+
+#location .loc_wrap {
+    /* outline: 1px solid tomato; */
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+#location .loc_title {
+    text-align: left;
+    font-weight: 600;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+    padding-left: 3px;
+}
+
+#location .loc_title p {
+    /* line-height: 70px; */
+    font-size: 74px;
+    overflow-y: hidden;
+    line-height: 80px;
+}
+
+#location .map {
+    border: 1px solid #939598;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    
+}
+
+@media screen and (max-width: 1074px) {
+    #location .map iframe {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+#location .map_desc { 
+    margin-top: 20px;
+    /* outline: 1px solid pink; */
+    text-align: left;
+    padding-left: 3px;
+}
+#location .map_desc p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#location .map_desc p > span {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#location .map_desc a {
+    display: inline-block;
+    margin-top: 8px;
+    padding-right: 15px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: black;
+}
+
+#end {
+    background-color: #e2ecf8;
+}
+
+#end .account img {
+    width: 80px;
+    padding-bottom: 20px;
+}
+
+#end .account p {
+    text-decoration: underline;
+    font-size: 16px;
+    color: black;
+}
+
+#end .account_desc {
+    width: 300px;
+    height: 320px;
+    margin: 25px auto;
+    background-color: #ffffff;
+    padding-top: 30px;
+    border-radius: 10px;
+}
